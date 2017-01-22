@@ -1,0 +1,104 @@
+.about-page-wrapper {
+    background-color: rgb(103, 114, 120);
+    padding: 19px; 
+    border-top: solid 5px black;
+    .h1-wrapper {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    margin: -3px auto 16px;
+    padding: 20px;
+    border-radius: 19px; 
+    @media screen and (min-width: 500px){
+      width: 289px; 
+    }
+    
+    }
+    h1 {
+        margin:0 auto ;
+        text-align: center;
+        color: rgba(11, 186, 206, 0.85);
+        background-color:rgb(41, 70, 79); 
+        width: 217px;
+        border-radius: 36px; 
+    }
+  .img-about-wrapper {
+      width: 100%;
+      background-color: rgba(0,0,0,.54);
+      border-radius: 9px;
+      padding-bottom:10px; 
+      padding-top: 17px;
+    @media screen and (min-width: 500px){
+      display: flex;
+    }
+    @media screen and (min-height: 700px){
+        flex-direction: column;
+        height: 94%; 
+    }
+      @media screen and (min-width: 1024px){
+      }
+  }
+
+  img {
+    height: 243px;
+    width:201px; 
+    border-radius: 4%;
+    margin-left: 18px; 
+    position: relative; 
+    opacity: 0;
+    transition: all 400ms linear;
+    transform: translate3d(-200px, 0px, 0px);
+      @media screen and (min-height:700px){
+        margin-left: 28px;
+      }
+      @media screen and (min-width:760px){
+        height: 303px;
+        width: 255px;
+      }
+      @media screen and (min-width: 1024px){
+        margin-left: 4.5%;
+        margin-top: 3%; 
+      }
+    
+}
+
+.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+  p {
+    display: none;    //js fades this in
+    color: white; 
+    font-family:cursive;
+    background-color: rgba(0, 204, 255, 0.12);
+    width: 90%;
+    margin: 10px auto; 
+    border-radius: 5px; 
+    padding: 7px 7px 30px; 
+    font-size: .87em;
+  @media(min-width: 500px){
+      font-size: .8em;
+      width: 49%;
+      margin: 3px auto;
+  }
+      @media screen and (min-height: 670px){
+        font-size: 1.8em;
+        width: 88%;
+        margin: 26px auto;
+  }
+        @media screen and (min-width: 740px){
+          font-size: 1.9em;
+          width: 91%;
+        }
+
+
+  a{
+    text-decoration: none; 
+    color: green; 
+  }
+  }
+}

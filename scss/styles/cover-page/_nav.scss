@@ -1,0 +1,25 @@
+.navigation{
+  
+  width: 90%; 
+  margin: 15px auto 0;
+    @media(min-height: 700px){
+        margin:55px auto 39px; 
+    }
+  
+
+ul {
+  padding-left: 0; 
+  list-style: none;
+  color: white;
+  display: flex; 
+  justify-content: space-around;} 
+  li{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.5em; 
+  }
+  a{
+    text-decoration: none; 
+    color: white; 
+  }
+}
+

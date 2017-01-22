@@ -1,0 +1,206 @@
+/**************************************************
+ Portfolio Page Styles
+**************************************************/
+
+.portfolio-page-wrapper {
+  background-color: rgb(103, 114, 120);
+  border-top: double 11px rgba(0,0,0,.3); 
+  .h1-wrapper {
+    background-color: rgba(0,0,0,.5);
+    width: 289px;
+    margin: 21px auto;
+    padding: 20px;
+    border-radius: 19px; 
+  }
+  h1 {
+      margin:0 auto ;
+      text-align: center;
+      color: rgba(11, 186, 206, 0.85);
+      background-color:rgb(41, 70, 79); 
+      width: 217px;
+      border-radius: 36px; 
+  }
+}
+
+.portfolio-examples-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.portfolio-examples {
+  width: 90%;
+  border-radius: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  background: linear-gradient(to right, rgba(100, 18, 18,1), rgba(166, 80, 52, 0.9));
+  margin-bottom: 120px;
+  position: relative;
+  box-shadow: 3px 3px rgba(0,0,0,.5);
+      @media(min-width:500px){
+        width: 73%; 
+      }
+
+    .ajax-overlay,.form-overlay,
+    .lightbox-overlay, .media-overlay,
+    .svg-overlay          {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 103%;
+      border: solid 4px rgba(0,0,0,.5); 
+      border-radius: 10px; 
+      height: 100%;
+      text-align: center; 
+      background-color: rgb(103, 114, 120); 
+      z-index: 1000; // so that the source and code buttons are behind
+        @media(min-width: 740px){
+          height: 100%; 
+        }
+    }  
+
+    .ajax-overlay-text,.form-overlay-text,
+    .lightbox-overlay-text, .media-overlay-text,
+      .svg-overlay-text       {
+      color: rgb(4, 198, 249);
+      font-size: 3em; 
+      font-family: sans-serif;
+      text-shadow: 2px 2px rgba(0,0,0,.5);
+      background-color: rgba(33, 146, 98, 0.13);
+      margin-left: 0; 
+      border-top: dotted 4px rgba(31, 162, 181, 0.82);  
+      border-bottom: dotted 9px rgba(31, 162, 181, 0.82);  
+        @media(min-width: 740px){
+          margin-top: 71px; 
+        }
+    
+    }
+    .slide-up {
+      transform: translate(30px, 0);
+      transition: transform 500ms ; 
+    }
+    .slide-away {
+      transform: translate(400px,-400px);
+      transition: transform 1s ; 
+    }
+    .bg-image {
+      background-repeat:no-repeat ;
+      background-position: center top; 
+      border: solid 1px black; 
+      border-radius: 5px; 
+      margin-top: 4px; 
+        @media(min-width:740px){
+          margin-top: 14px;
+        }
+
+  }
+  a {
+      width: 100%;
+      height: 100%; 
+      text-decoration: none; 
+      display: inline-block;  
+      color: rgb(100, 18, 18);
+  }
+  .ajax {
+      height: 215px;
+      background-image: url("../images/ajax.jpg");
+      background-size: 274px 215px; 
+      width: 274px; 
+  }
+  .form {
+      background-image: url("../images/form-ps.jpg");
+      height: 200px;
+      width: 200px;
+      background-size: 200px 200px; 
+  }
+  .lightbox{
+      background-image: url("../images/lightbox.jpg");
+      height: 200px;
+      width: 200px;
+      background-size: 200px 200px; 
+
+  }
+  .video-player{
+      background-image: url("../images/video-player.jpg");
+      height: 200px;
+      width: 200px;
+      background-size: 200px 200px; 
+
+  }
+  .svg-site{
+      background-image: url("../images/corgi.jpg");
+      height: 200px;
+      width: 200px;
+      background-size: 200px 200px; 
+
+  }
+    .bullet-list{
+       color: rgb(255, 226, 180);
+       padding-left: 0; 
+    }
+    .bullet-list li {
+        display: flex;
+        align-items: center; 
+        font-size: 1.1em;
+        font-family: sans-serif; 
+    }
+    .check-mark{
+      background-image: url("../images/check-mark.png");
+      height: 20px;
+      width: 20px; 
+      background-size: 20px 20px; 
+      background-repeat: no-repeat; 
+      display: inline-block; 
+      margin-left: 3px;
+    }
+    .site-description-text{
+      color: rgb(250, 250, 250);
+      font-size: 1em; 
+      margin: 15px 5px 0; 
+      font-family: 'Nunito', sans-serif;
+      border-left: solid 10px rgb(92, 32, 32);
+      border-bottom: solid 12px rgba(199, 70, 129, 0.52);
+      background-color: rgba(242, 123, 123, 0.43);
+      text-shadow: 1px 1px rgba(64, 149, 47, 0.44);  
+      @media(min-width:500px){
+        font-size: 1.1em;
+        padding: 10px;
+      }
+          @media screen and (min-width: 740px){
+            font-size: 1.3em;
+            margin-right: 0; 
+        }
+
+  }
+  .link-wrapper {
+    display:flex;    
+    flex-direction: row; 
+    justify-content: space-around; 
+    width: 95%;
+    margin: 32px 0;
+      @media(min-width: 740px){
+        bottom: 53px; 
+      }
+  }
+  .code, .site {
+     background-color: orange;
+     width: 89px;
+     height: 50px;
+     border-radius: 5px; 
+     color: rgb(100, 18, 18);
+     text-align: center; 
+      line-height: 50px; 
+      font-family: sans-serif;
+      box-shadow: 2px 2px rgb(110, 110, 110);
+      cursor: pointer; 
+          @media screen and (min-width: 740px){
+          width: 190px;
+        }
+
+  }
+  
+}
+
+
+

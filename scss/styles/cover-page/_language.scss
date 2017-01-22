@@ -1,0 +1,23 @@
+.code-languages {
+  padding-left: 0;
+  list-style: none;
+  text-align: center; 
+  background-color: rgba(143, 19, 221, 0.11); 
+  font-size: 1.4em;
+  @media(min-width: 500px){
+    font-size: 1em; 
+  }
+
+  @media(min-height: 568px){
+      font-size: 2.2em; 
+      margin-top: 37px; 
+  }
+    @media(min-height: 604px){
+        font-size: 2.2em; 
+        margin-top: 65px; 
+    }
+    li{
+      color: rgba(0, 204, 255, 0.97);
+  }
+  
+}
