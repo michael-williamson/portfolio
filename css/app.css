@@ -74,7 +74,7 @@ header {
     color: rgba(0, 204, 255, 0.97); }
 
 /**************************************************
- Portfolio Page Styles
+ Portfolio Page Styles 
 **************************************************/
 .portfolio-page-wrapper {
   background-color: #677278;
@@ -111,9 +111,9 @@ header {
   @media (min-width: 500px) {
     .portfolio-examples {
       width: 73%; } }
-  .portfolio-examples .ajax-overlay, .portfolio-examples .form-overlay,
+  .portfolio-examples .ajax-overlay, .portfolio-examples .quiz-overlay, .portfolio-examples .form-overlay,
   .portfolio-examples .lightbox-overlay, .portfolio-examples .media-overlay,
-  .portfolio-examples .svg-overlay {
+  .portfolio-examples .svg-overlay, .portfolio-examples .game-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,13 +125,13 @@ header {
     background-color: #677278;
     z-index: 1000; }
     @media (min-width: 740px) {
-      .portfolio-examples .ajax-overlay, .portfolio-examples .form-overlay,
+      .portfolio-examples .ajax-overlay, .portfolio-examples .quiz-overlay, .portfolio-examples .form-overlay,
       .portfolio-examples .lightbox-overlay, .portfolio-examples .media-overlay,
-      .portfolio-examples .svg-overlay {
+      .portfolio-examples .svg-overlay, .portfolio-examples .game-overlay {
         height: 100%; } }
   .portfolio-examples .ajax-overlay-text, .portfolio-examples .form-overlay-text,
   .portfolio-examples .lightbox-overlay-text, .portfolio-examples .media-overlay-text,
-  .portfolio-examples .svg-overlay-text {
+  .portfolio-examples .svg-overlay-text, .portfolio-examples .game-overlay-text {
     color: #04c6f9;
     font-size: 3em;
     font-family: sans-serif;
@@ -143,7 +143,7 @@ header {
     @media (min-width: 740px) {
       .portfolio-examples .ajax-overlay-text, .portfolio-examples .form-overlay-text,
       .portfolio-examples .lightbox-overlay-text, .portfolio-examples .media-overlay-text,
-      .portfolio-examples .svg-overlay-text {
+      .portfolio-examples .svg-overlay-text, .portfolio-examples .game-overlay-text {
         margin-top: 71px; } }
   .portfolio-examples .slide-up {
     transform: translate(30px, 0);
@@ -169,6 +169,16 @@ header {
   .portfolio-examples .ajax {
     height: 215px;
     background-image: url("../images/ajax.jpg");
+    background-size: 274px 215px;
+    width: 274px; }
+  .portfolio-examples .game {
+    height: 215px;
+    background-image: url("../images/bee-jumper.jpg");
+    background-size: 274px 215px;
+    width: 274px; }
+  .portfolio-examples .quiz {
+    height: 215px;
+    background-image: url("../images/quiz.png");
     background-size: 274px 215px;
     width: 274px; }
   .portfolio-examples .form {
@@ -341,9 +351,11 @@ header {
   border-top: solid 5px rgba(0, 0, 0, 0.75);
   text-align: center; }
   .contact-page-wrapper h1 {
-    margin-top: 10px;
+    margin-top: 26px;
+    margin-bottom: 36px;
     text-align: center; }
+  .contact-page-wrapper span {
+    color: #0006ff;
+    font-size: 25px; }
   .contact-page-wrapper a {
     display: inline-block; }
-
-/*# sourceMappingURL=app.css.map */

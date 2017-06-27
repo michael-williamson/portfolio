@@ -1,5 +1,5 @@
 /**************************************************
- Portfolio Page Styles
+ Portfolio Page Styles 
 **************************************************/
 
 .portfolio-page-wrapper {
@@ -42,9 +42,9 @@
         width: 73%; 
       }
 
-    .ajax-overlay,.form-overlay,
+    .ajax-overlay,.quiz-overlay,.form-overlay,
     .lightbox-overlay, .media-overlay,
-    .svg-overlay          {
+    .svg-overlay, .game-overlay          {
       position: absolute; 
       top: 0; 
       left: 0; 
@@ -62,7 +62,7 @@
 
     .ajax-overlay-text,.form-overlay-text,
     .lightbox-overlay-text, .media-overlay-text,
-      .svg-overlay-text       {
+      .svg-overlay-text, .game-overlay-text       {
       color: rgb(4, 198, 249);
       font-size: 3em; 
       font-family: sans-serif;
@@ -105,6 +105,19 @@
   .ajax {
       height: 215px;
       background-image: url("../images/ajax.jpg");
+      background-size: 274px 215px; 
+      width: 274px; 
+  }
+  .game{
+      height: 215px;
+      background-image: url("../images/bee-jumper.jpg");
+      background-size: 274px 215px; 
+      width: 274px; 
+  }
+
+  .quiz {
+      height: 215px;
+      background-image: url("../images/quiz.png");
       background-size: 274px 215px; 
       width: 274px; 
   }

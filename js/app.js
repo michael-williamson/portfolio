@@ -2,10 +2,27 @@ var $mainWrapper = $(".main-wrapper");
 var $aboutImg   = $("#about-image");
 var $aboutDescription = $("#about-description");
 var $ajaxOverlay = $("#ajax-overlay");
+var $quizOverlay = $("#quiz-overlay");
 var $formOverlay = $("#form-overlay");
 var $lightboxOverlay = $("#lightbox-overlay");
 var $mediaOverlay = $("#media-overlay");
 var $svgOverlay = $("#svg-overlay");
+var $gameOverlay = $("#game-overlay");
+
+
+function coverRemove(yScrollPos,offset,overlay){
+    if(yScrollPos > (offset - 400)) {
+        overlay.addClass("slide-up");
+    }
+    if(yScrollPos > (offset - 200)) {
+        overlay.addClass("slide-away");
+        overlay.fadeOut(500);
+    }
+
+}
+
+
+
 
 $(window).on('scroll', function() {
     var yScrollPos = window.pageYOffset;
@@ -18,41 +35,24 @@ $(window).on('scroll', function() {
         $aboutDescription.fadeIn("slow");
     }
   
-      var $ajaxOffset = $ajaxOverlay.offset().top;
-    if(yScrollPos > ($ajaxOffset - 400)) {
-        $ajaxOverlay.addClass("slide-up");
-    }
-    if(yScrollPos > ($ajaxOffset - 200)) {
-        $ajaxOverlay.addClass("slide-away");
-        $ajaxOverlay.fadeOut(500);
-    }
+    //   var $ajaxOffset = $ajaxOverlay.offset().top;
+    // coverRemove(yScrollPos,$ajaxOffset,$ajaxOverlay);
+
+    var $gameOffset = $gameOverlay.offset().top;
+    coverRemove(yScrollPos,$gameOffset,$gameOverlay);
+
+  
+      var $quizOffset = $quizOverlay.offset().top;
+    coverRemove(yScrollPos,$quizOffset,$quizOverlay);
 
       var $formOffset = $formOverlay.offset().top;
-    if(yScrollPos > ($formOffset - 400)) {
-        $formOverlay.addClass("slide-up");
-    }
-    if(yScrollPos > ($formOffset - 200)) {
-        $formOverlay.addClass("slide-away");
-        $formOverlay.fadeOut(500);
-    }
+      coverRemove(yScrollPos,$formOffset,$formOverlay);
 
       var $lightboxOffset = $lightboxOverlay.offset().top;
-    if(yScrollPos > ($lightboxOffset - 400)) {
-        $lightboxOverlay.addClass("slide-up");
-    }
-    if(yScrollPos > ($lightboxOffset - 200)) {
-        $lightboxOverlay.addClass("slide-away");
-        $lightboxOverlay.fadeOut(500);
-    }
+    coverRemove(yScrollPos,$lightboxOffset,$lightboxOverlay);
 
       var $mediaOffset = $mediaOverlay.offset().top;
-    if(yScrollPos > ($mediaOffset - 400)) {
-        $mediaOverlay.addClass("slide-up");
-    }
-    if(yScrollPos > ($mediaOffset - 200)) {
-        $mediaOverlay.addClass("slide-away");
-        $mediaOverlay.fadeOut(500);
-    }
+    coverRemove(yScrollPos,$mediaOffset,$mediaOverlay);
   
       var $svgOffset = $svgOverlay.offset().top;
     if(yScrollPos > ($svgOffset - 400)) {
