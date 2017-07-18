@@ -8,6 +8,7 @@ var $lightboxOverlay = $("#lightbox-overlay");
 var $mediaOverlay = $("#media-overlay");
 var $svgOverlay = $("#svg-overlay");
 var $gameOverlay = $("#game-overlay");
+var $livewellOverlay = $("#livewell-overlay");
 
 
 function coverRemove(yScrollPos,offset,overlay){
@@ -41,6 +42,8 @@ $(window).on('scroll', function() {
     var $gameOffset = $gameOverlay.offset().top;
     coverRemove(yScrollPos,$gameOffset,$gameOverlay);
 
+    var $livewellOffset = $livewellOverlay.offset().top;
+    coverRemove(yScrollPos,$livewellOffset,$livewellOverlay);
   
       var $quizOffset = $quizOverlay.offset().top;
     coverRemove(yScrollPos,$quizOffset,$quizOverlay);
