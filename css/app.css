@@ -111,7 +111,7 @@ header {
   @media (min-width: 500px) {
     .portfolio-examples {
       width: 73%; } }
-  .portfolio-examples .ajax-overlay, .portfolio-examples .quiz-overlay, .portfolio-examples .form-overlay,
+  .portfolio-examples .ajax-overlay, .portfolio-examples .livewell-overlay, .portfolio-examples .quiz-overlay, .portfolio-examples .form-overlay,
   .portfolio-examples .lightbox-overlay, .portfolio-examples .media-overlay,
   .portfolio-examples .svg-overlay, .portfolio-examples .game-overlay {
     position: absolute;
@@ -125,11 +125,11 @@ header {
     background-color: #677278;
     z-index: 1000; }
     @media (min-width: 740px) {
-      .portfolio-examples .ajax-overlay, .portfolio-examples .quiz-overlay, .portfolio-examples .form-overlay,
+      .portfolio-examples .ajax-overlay, .portfolio-examples .livewell-overlay, .portfolio-examples .quiz-overlay, .portfolio-examples .form-overlay,
       .portfolio-examples .lightbox-overlay, .portfolio-examples .media-overlay,
       .portfolio-examples .svg-overlay, .portfolio-examples .game-overlay {
         height: 100%; } }
-  .portfolio-examples .ajax-overlay-text, .portfolio-examples .form-overlay-text,
+  .portfolio-examples .ajax-overlay-text, .portfolio-examples .livewell-overlay-text, .portfolio-examples .form-overlay-text,
   .portfolio-examples .lightbox-overlay-text, .portfolio-examples .media-overlay-text,
   .portfolio-examples .svg-overlay-text, .portfolio-examples .game-overlay-text {
     color: #04c6f9;
@@ -141,7 +141,7 @@ header {
     border-top: dotted 4px rgba(31, 162, 181, 0.82);
     border-bottom: dotted 9px rgba(31, 162, 181, 0.82); }
     @media (min-width: 740px) {
-      .portfolio-examples .ajax-overlay-text, .portfolio-examples .form-overlay-text,
+      .portfolio-examples .ajax-overlay-text, .portfolio-examples .livewell-overlay-text, .portfolio-examples .form-overlay-text,
       .portfolio-examples .lightbox-overlay-text, .portfolio-examples .media-overlay-text,
       .portfolio-examples .svg-overlay-text, .portfolio-examples .game-overlay-text {
         margin-top: 71px; } }
@@ -169,6 +169,11 @@ header {
   .portfolio-examples .ajax {
     height: 215px;
     background-image: url("../images/ajax.jpg");
+    background-size: 274px 215px;
+    width: 274px; }
+  .portfolio-examples .livewell {
+    height: 215px;
+    background-image: url("../images/quiz.png");
     background-size: 274px 215px;
     width: 274px; }
   .portfolio-examples .game {
