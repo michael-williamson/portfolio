@@ -9,6 +9,7 @@ var $mediaOverlay = $("#media-overlay");
 var $svgOverlay = $("#svg-overlay");
 var $gameOverlay = $("#game-overlay");
 var $livewellOverlay = $("#livewell-overlay");
+var $yogaOverlay = $("#yoga-overlay");
 
 
 function coverRemove(yScrollPos,offset,overlay){
@@ -32,12 +33,15 @@ $(window).on('scroll', function() {
     if(yScrollPos > (height - 300)) {
         $aboutImg.addClass("in-view");
     }
-    if(yScrollPos > (height - 200)) {
+    if(yScrollPos > (height - 200)) {  
         $aboutDescription.fadeIn("slow");
     }
   
     //   var $ajaxOffset = $ajaxOverlay.offset().top;
     // coverRemove(yScrollPos,$ajaxOffset,$ajaxOverlay);
+
+    var $yogaOffset = $yogaOverlay.offset().top;
+    coverRemove(yScrollPos,$yogaOffset,$yogaOverlay);
 
     var $gameOffset = $gameOverlay.offset().top;
     coverRemove(yScrollPos,$gameOffset,$gameOverlay);

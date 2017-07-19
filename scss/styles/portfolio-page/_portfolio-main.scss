@@ -42,11 +42,11 @@
         width: 73%; 
       }
 
-    .ajax-overlay,.livewell-overlay,.quiz-overlay,.form-overlay,
+    .ajax-overlay,.yoga-overlay,.livewell-overlay,.quiz-overlay,.form-overlay,
     .lightbox-overlay, .media-overlay,
     .svg-overlay, .game-overlay          {
       position: absolute; 
-      top: 0; 
+      top: 0;   
       left: 0; 
       width: 103%;
       border: solid 4px rgba(0,0,0,.5); 
@@ -60,7 +60,7 @@
         }
     }  
 
-    .ajax-overlay-text,.livewell-overlay-text,.form-overlay-text,
+    .ajax-overlay-text,.yoga-overlay-text,.livewell-overlay-text,.form-overlay-text,
     .lightbox-overlay-text, .media-overlay-text,
       .svg-overlay-text, .game-overlay-text       {
       color: rgb(4, 198, 249);
@@ -105,6 +105,12 @@
   .ajax {
       height: 215px;
       background-image: url("../images/ajax.jpg");
+      background-size: 274px 215px; 
+      width: 274px; 
+  }
+.yoga {
+      height: 215px;
+      background-image: url("../images/yoga-site.png");
       background-size: 274px 215px; 
       width: 274px; 
   }
