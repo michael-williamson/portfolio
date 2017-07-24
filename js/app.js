@@ -10,6 +10,7 @@ var $svgOverlay = $("#svg-overlay");
 var $gameOverlay = $("#game-overlay");
 var $livewellOverlay = $("#livewell-overlay");
 var $yogaOverlay = $("#yoga-overlay");
+var $starOverlay = $("#star-power-overlay");
 
 
 function coverRemove(yScrollPos,offset,overlay){
@@ -39,6 +40,9 @@ $(window).on('scroll', function() {
   
     //   var $ajaxOffset = $ajaxOverlay.offset().top;
     // coverRemove(yScrollPos,$ajaxOffset,$ajaxOverlay);
+
+    var $starOffset = $starOverlay.offset().top;
+    coverRemove(yScrollPos,$starOffset,$starOverlay);    
 
     var $yogaOffset = $yogaOverlay.offset().top;
     coverRemove(yScrollPos,$yogaOffset,$yogaOverlay);

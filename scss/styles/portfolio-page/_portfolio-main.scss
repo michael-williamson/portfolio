@@ -10,7 +10,7 @@
     width: 289px;
     margin: 21px auto;
     padding: 20px;
-    border-radius: 19px; 
+    border-radius: 19px;   
   }
   h1 {
       margin:0 auto ;
@@ -42,7 +42,7 @@
         width: 73%; 
       }
 
-    .ajax-overlay,.yoga-overlay,.livewell-overlay,.quiz-overlay,.form-overlay,
+    .ajax-overlay,.star-overlay,.yoga-overlay,.livewell-overlay,.quiz-overlay,.form-overlay,
     .lightbox-overlay, .media-overlay,
     .svg-overlay, .game-overlay          {
       position: absolute; 
@@ -60,7 +60,7 @@
         }
     }  
 
-    .ajax-overlay-text,.yoga-overlay-text,.livewell-overlay-text,.form-overlay-text,
+    .ajax-overlay-text,.star-overlay-text,.yoga-overlay-text,.livewell-overlay-text,.form-overlay-text,
     .lightbox-overlay-text, .media-overlay-text,
       .svg-overlay-text, .game-overlay-text       {
       color: rgb(4, 198, 249);
@@ -101,6 +101,12 @@
       text-decoration: none; 
       display: inline-block;  
       color: rgb(100, 18, 18);
+  }
+  .star-power {
+      height: 215px;
+      background-image: url("../images/star-power.jpg");
+      background-size: 274px 215px; 
+      width: 274px; 
   }
   .ajax {
       height: 215px;
