@@ -168,11 +168,7 @@ header {
     color: #641212; }
   .portfolio-examples .star-power {
     height: 215px;
-<<<<<<< HEAD
     background-image: url("../images/the-planets.png");
-=======
-    background-image: url("../images/the-planets.jpg");
->>>>>>> origin/master
     background-size: 274px 215px;
     width: 274px; }
   .portfolio-examples .ajax {
