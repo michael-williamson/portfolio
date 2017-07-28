@@ -6,17 +6,19 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-size: 3em; 
     color: white; 
+    animation: colorAniHeader 4s linear forwards; 
     @media screen and (min-height: 700px){
         padding-top: 76px;   
     }
     
-  }
+  }   
   
   h4{
     margin-top: 15px; 
     font-size: 1.5em;
     font-family: 'Permanent Marker', cursive;
     color: #adebad;
+    animation: colorAniDesigns 4s linear forwards; 
     @media screen and (min-height: 700px){
         padding-top: 23px;   
     }
@@ -24,4 +26,14 @@ header {
   }
 }
 
- 
+@keyframes colorAniHeader{
+  0%{color: white;}
+  50%{color: #12fffa;}
+  100%{color: white;}
+}
+
+@keyframes colorAniDesigns{
+  0%{    color: #adebad;}
+  50%{color: #b295fe;}
+  100%{    color: #adebad;}
+}
