@@ -12,6 +12,7 @@ var $livewellOverlay = $("#livewell-overlay");
 var $yogaOverlay = $("#yoga-overlay");
 var $starOverlay = $("#star-power-overlay");
 var $brewpubOverlay = $("#brewpub-overlay");
+var $freediveOverlay = $("#freedive-overlay");
 
 
 function coverRemove(yScrollPos,offset,overlay){
@@ -41,6 +42,10 @@ $(window).on('scroll', function() {
   
     //   var $ajaxOffset = $ajaxOverlay.offset().top;
     // coverRemove(yScrollPos,$ajaxOffset,$ajaxOverlay);
+
+     var $freediveOffset = $freediveOverlay.offset().top;
+    coverRemove(yScrollPos,$freediveOffset,$freediveOverlay);  
+    
 
      var $brewpubOffset = $brewpubOverlay.offset().top;
     coverRemove(yScrollPos,$brewpubOffset,$brewpubOverlay);  

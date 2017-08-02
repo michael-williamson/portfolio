@@ -42,7 +42,7 @@
         width: 73%; 
       }
 
-    .ajax-overlay,.brewpub-overlay,.star-power-overlay,.yoga-overlay,.livewell-overlay,.quiz-overlay,.form-overlay,
+    .ajax-overlay,.brewpub-overlay,.freedive-overlay,.star-power-overlay,.yoga-overlay,.livewell-overlay,.quiz-overlay,.form-overlay,
     .lightbox-overlay, .media-overlay,
     .svg-overlay, .game-overlay          {
       position: absolute; 
@@ -60,7 +60,7 @@
         }
     }  
 
-    .ajax-overlay-text,.brewpub-overlay-text,.star-power-overlay-text,.yoga-overlay-text,.livewell-overlay-text,.form-overlay-text,
+    .ajax-overlay-text,.brewpub-overlay-text,.freedive-overlay-text,.star-power-overlay-text,.yoga-overlay-text,.livewell-overlay-text,.form-overlay-text,
     .lightbox-overlay-text, .media-overlay-text,
       .svg-overlay-text, .game-overlay-text       {
       color: rgb(4, 198, 249);
@@ -107,6 +107,12 @@
       background-image: url("../images/brewpub.png");
       background-size: 274px 215px; 
       width: 274px; 
+  }   
+  .freedive{
+      height: 215px;    
+      background-image: url("../images/freedive.png");
+      background-size: 274px 215px; 
+      width: 274px;      
   }
   .star-power {    
       height: 215px;    
